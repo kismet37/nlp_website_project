@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userId = new URLSearchParams(window.location.search).get('userId');
 
     yesButton.addEventListener('click', () => {
+        console.log('test')
         window.location.href = `/game?userId=${userId}`;
     });
 
