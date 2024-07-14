@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographic Survey</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+
+<body id="mainBody"> <!-- Add id="mainBody" here -->
+    <h1>Demographic Survey</h1>
+    <form id="demographicForm" action="/submit-demographics" method="POST">
+        <p>All of the data entered in the following form and game will be used in a study researching data collection for natural language processing.  Your data and personal information will not be associated with you in any way. Do you consent to the use of your data for this study?</p>
+        <label>
+            <input type="radio" name="consent" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="consent" value="no" required> No
+        </label>
+        <br><br>
+
+        <p>Are you fluent in English?</p>
+        <label>
+            <input type="radio" name="fluent" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="fluent" value="no" required> No
+        </label>
+        <br><br>
+
+        <p>What is your age range?</p>
+        <label>
+            <input type="radio" name="age" value="1" required> &lt;18
+        </label>
+        <label>
+            <input type="radio" name="age" value="2" required> 18-25
+        </label>
+        <label>
+            <input type="radio" name="age" value="3" required> 26-35
+        </label>
+        <label>
+            <input type="radio" name="age" value="4" required> 36-50
+        </label>
+        <label>
+            <input type="radio" name="age" value="5" required> 50+
+        </label>
+        <br><br>
+
+        <p>What is your general geographic location (e.g., northeast USA, southern Britain, etc)?</p>
+        <input type="text" name="geographic_location" required>
+        <br><br>
+
+        <p>What is your first language?</p>
+        <input type="text" name="first_language" required>
+        <br><br>
+
+        <p>Would you describe yourself as speaking a dialect of English?</p>
+        <label>
+            <input type="radio" name="dialect" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="dialect" value="no" required> No
+        </label>
+        <br><br>
+
+        <p>If yes, please specify which:</p>
+        <input type="text" name="dialect_specify">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

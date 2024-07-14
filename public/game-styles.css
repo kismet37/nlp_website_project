@@ -1,0 +1,122 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-weight: bold; 
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ccc; /* Light text */
+    line-height: 1.6;
+    margin: 50px; /* Increase margin around the body */
+    padding: 0;
+
+    background-image: url('Designer.jpeg'); /* Adjust the path as per your directory structure */
+    background-size: cover; /* Cover the entire background */
+    background-position: center-bottom; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+}
+
+/* Main content container */
+.container {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Header styles */
+header {
+    background-color: #222; /* Dark header background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Increase margin below the header */
+    font-size: 24px; /* Larger font size */
+}
+
+/* Button styles */
+button {
+    background-color: #444; /* Dark button background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px; /* Larger font size */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #666; /* Darker background on hover */
+}
+
+/* Text styles */
+p {
+    font-size: 18px; /* Larger text font size */
+    line-height: 1.8;
+    margin-bottom: 15px; /* Increase margin below paragraphs */
+    width: 80%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222; /* Dark footer background */
+    color: #ccc; /* Light footer text */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; /* Increase margin above the footer */
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 80%; /* Full width */
+    padding: 10px; /* Larger padding */
+    margin: 10px 0; /* Increased vertical margin */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+    font-size: 16px; /* Slightly larger font size */
+    box-shadow: none; /* No box shadow */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #428bca; /* Focus border color */
+}
+
+/* Container for the game text with blurred background */
+.blurred-background {
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    backdrop-filter: blur(0.5px); /* Blur effect */
+    padding: 15px; /* Add some padding */
+    border-radius: 10px; /* Optional: round the corners */
+    color: #ffffff; /* White text for better contrast */
+    font-size: 1.2em; /* Larger text size for readability */
+    width: 65%;
+}
+
+/* Ensure the game container uses the full viewport height */
+/* #game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Center-align the text 
+} */
